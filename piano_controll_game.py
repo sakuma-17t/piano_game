@@ -12,7 +12,7 @@ print("full midi_events:[[[status,data1,data2,data3],timestamp]]")
 loop = True
 t_state = 0
 
-ser = serial.Serial("COM6", 115200)
+ser = serial.Serial("COM6", 115200) #必要に応じて「"COM6"」の部分は書き換えてください
 
 while loop:
     if midi_in.poll():
